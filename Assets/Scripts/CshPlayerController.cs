@@ -8,8 +8,8 @@ public class CshPlayerController : MonoBehaviour
 {
     private Rigidbody2D _rigidbody2D;
     
-    public float maxSpeed;
-    public float maxThrust;
+    public float maxSpeed = 4.0f;
+    public float maxThrust = 4.0f;
     public float thrustPower = 1.5f;
 
     private void Awake()
