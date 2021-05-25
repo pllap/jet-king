@@ -413,10 +413,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxSpeed: 4
-  _horizontalAcceleration: 16
-  _currentSpeed: 0
-  maxThrust: 12
-  _thrustAcceleration: 32
+  maxThrust: 4
+  thrustPower: 8
 --- !u!50 &2124914053
 Rigidbody2D:
   serializedVersion: 4

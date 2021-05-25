@@ -6,24 +6,17 @@ using UnityEngine.Serialization;
 
 public class CshPlayerController : MonoBehaviour
 {
-    public float maxSpeed;
-    private float normalSpeed = 0.0f;
-    private float slowSpeed = 0.0f;
-    public float _horizontalAcceleration = 16.0f;
-    public float _currentSpeed = 0.0f;
-
-    public float maxThrust;
-    public float _thrustAcceleration = 32.0f;
-    private float _currentThrust = 0.0f;
+    private Rigidbody2D _rigidbody2D;
     
-    // Start is called before the first frame update
-    void Start()
+    public float maxSpeed;
+    public float maxThrust;
+    public float thrustPower = 1.5f;
+
+    private void Awake()
     {
-        normalSpeed = maxSpeed;
-        slowSpeed = maxSpeed * 0.4f;
+        this._rigidbody2D = GetComponent<Rigidbody2D>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         HorizontalMove();
@@ -31,79 +24,27 @@ public class CshPlayerController : MonoBehaviour
     }
 
     private void HorizontalMove()
-    {        
-        // slow speed down when shift button is being pressed
-        if (Input.GetKeyDown(KeyCode.LeftShift))
-        {
-            maxSpeed = slowSpeed;
-        }
-        if (Input.GetKeyUp(KeyCode.LeftShift))
-        {
-            maxSpeed = normalSpeed;
-        }
+    {
+        var direction = Input.GetAxisRaw("Horizontal");
         
-        // idle
-        if (!Input.GetKey(KeyCode.LeftArrow) && !Input.GetKey(KeyCode.RightArrow))
-        {
-            if (_currentSpeed > 0.0f)
-            {
-                _currentSpeed -= _horizontalAcceleration * Time.deltaTime;
-            }
-            if (_currentSpeed < 0.0f)
-            {
-                _currentSpeed += _horizontalAcceleration * Time.deltaTime;
-            }
-        }
-        
-        // under specific value of speed are set to 0
-        if (Mathf.Abs(_currentSpeed) < 0.1f)
-        {
-            _currentSpeed = 0.0f;
-        }
+        _rigidbody2D.AddForce(Vector2.right * direction, ForceMode2D.Force);
 
-        // left
-        if (Input.GetKey(KeyCode.LeftArrow))
+        if (_rigidbody2D.velocity.x * direction > maxSpeed)
         {
-            if (_currentSpeed > -maxSpeed)
-            {
-                _currentSpeed -= _horizontalAcceleration * Time.deltaTime;
-            }
+            _rigidbody2D.velocity = new Vector2(direction * maxSpeed, _rigidbody2D.velocity.y);
         }
-        
-        // right
-        if (Input.GetKey(KeyCode.RightArrow))
-        {
-            if (_currentSpeed < maxSpeed)
-            {
-                _currentSpeed += _horizontalAcceleration * Time.deltaTime;
-            }
-        }
-        
-        transform.position = new Vector2(transform.position.x + _currentSpeed * Time.deltaTime, transform.position.y);
     }
 
     void Thrust()
     {
         if (Input.GetKey(KeyCode.Space))
         {
-            if (_currentThrust < maxThrust)
-            {
-                _currentThrust += _thrustAcceleration * Time.deltaTime;
-            }
-        }
-        else
-        {
-            if (_currentThrust > 0.0f)
-            {
-                _currentThrust -= _thrustAcceleration * Time.deltaTime;
-            }
+            _rigidbody2D.AddForce(Vector2.up * thrustPower, ForceMode2D.Force);
 
-            if (_currentThrust < 0.0f)
+            if (_rigidbody2D.velocity.y > maxThrust)
             {
-                _currentThrust = 0.0f;
+                _rigidbody2D.velocity = new Vector2(_rigidbody2D.velocity.x, maxThrust);
             }
         }
-        
-        transform.position = new Vector2(transform.position.x, transform.position.y + _currentThrust * Time.deltaTime);
     }
 }
