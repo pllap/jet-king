@@ -32,22 +32,28 @@ public class CshPlayerController : MonoBehaviour
     {
         if (Input.GetButtonDown("Horizontal"))
         {
-            _spriteRenderer.flipX = Input.GetAxisRaw("Horizontal") == -1.0f;
+            var facing = Input.GetAxisRaw("Horizontal");
+            if (facing == 1.0f)
+            {
+                _spriteRenderer.flipX = false;
+            }
+            else if (facing == -1.0f)
+            {
+                _spriteRenderer.flipX = true;
+            }
+            else if (facing == 0.0f)
+            {
+                _spriteRenderer.flipX = !_spriteRenderer.flipX;
+            }
         }
 
         _animator.SetBool("isRunning", Input.GetButton("Horizontal"));
-    }
 
-    private void HorizontalMove()
-    {
-        var direction = Input.GetAxisRaw("Horizontal");
-
-        _rigidbody2D.AddForce(Vector2.right * direction, ForceMode2D.Force);
-
-        if (_rigidbody2D.velocity.x * direction > maxSpeed)
-        {
-            _rigidbody2D.velocity = new Vector2(direction * maxSpeed, _rigidbody2D.velocity.y);
-        }
+        // landing
+        _animator.SetBool(
+            "isFloating",
+            Physics2D.Raycast(_rigidbody2D.position, Vector2.down, 0.5f).collider == null
+        );
     }
 
     void Thrust()
@@ -60,6 +66,18 @@ public class CshPlayerController : MonoBehaviour
             {
                 _rigidbody2D.velocity = new Vector2(_rigidbody2D.velocity.x, maxThrust);
             }
+        }
+    }
+
+    private void HorizontalMove()
+    {
+        var direction = Input.GetAxisRaw("Horizontal");
+
+        _rigidbody2D.AddForce(Vector2.right * direction, ForceMode2D.Force);
+
+        if (_rigidbody2D.velocity.x * direction > maxSpeed)
+        {
+            _rigidbody2D.velocity = new Vector2(direction * maxSpeed, _rigidbody2D.velocity.y);
         }
     }
 }

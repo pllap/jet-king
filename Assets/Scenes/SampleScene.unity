@@ -246,7 +246,7 @@ GameObject:
   - component: {fileID: 233438950}
   - component: {fileID: 233438952}
   - component: {fileID: 233438951}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -328,7 +328,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxSpeed: 4
   maxThrust: 2
-  thrustPower: 1
+  thrustPower: 2
 --- !u!95 &233438951
 Animator:
   serializedVersion: 3
