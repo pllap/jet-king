@@ -10,9 +10,9 @@ public class CshPlayerController : MonoBehaviour
     private SpriteRenderer _spriteRenderer;
     private Animator _animator;
 
-    public float maxSpeed = 4.0f;
+    public float maxSpeed = 8.0f;
     public float maxThrust = 2.0f;
-    public float thrustPower = 1.0f;
+    public float thrustPower = 2.0f;
 
     private void Awake()
     {
