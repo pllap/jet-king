@@ -1,0 +1,90 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: SlipperyPlatformAtlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 0
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 0
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 2800000, guid: f3a3739c46df07c4783aa7cacd4ea9fd, type: 3}
+    totalSpriteSurfaceArea: 4352
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 6999356808946286661, guid: f3a3739c46df07c4783aa7cacd4ea9fd, type: 3}
+  - {fileID: 5727319921478060668, guid: f3a3739c46df07c4783aa7cacd4ea9fd, type: 3}
+  - {fileID: 1193238551180637027, guid: f3a3739c46df07c4783aa7cacd4ea9fd, type: 3}
+  - {fileID: -3569227142658795504, guid: f3a3739c46df07c4783aa7cacd4ea9fd, type: 3}
+  - {fileID: 7078552515480464524, guid: f3a3739c46df07c4783aa7cacd4ea9fd, type: 3}
+  - {fileID: -7142769517661499802, guid: f3a3739c46df07c4783aa7cacd4ea9fd, type: 3}
+  - {fileID: 6891455715271427785, guid: f3a3739c46df07c4783aa7cacd4ea9fd, type: 3}
+  - {fileID: 9070145554250048815, guid: f3a3739c46df07c4783aa7cacd4ea9fd, type: 3}
+  - {fileID: 3021572931932322803, guid: f3a3739c46df07c4783aa7cacd4ea9fd, type: 3}
+  - {fileID: 7271224772019477011, guid: f3a3739c46df07c4783aa7cacd4ea9fd, type: 3}
+  - {fileID: 6828223402462963830, guid: f3a3739c46df07c4783aa7cacd4ea9fd, type: 3}
+  - {fileID: 8449117228803966371, guid: f3a3739c46df07c4783aa7cacd4ea9fd, type: 3}
+  - {fileID: 5450567856173969422, guid: f3a3739c46df07c4783aa7cacd4ea9fd, type: 3}
+  - {fileID: -1846024554076735110, guid: f3a3739c46df07c4783aa7cacd4ea9fd, type: 3}
+  - {fileID: 5466970857942078623, guid: f3a3739c46df07c4783aa7cacd4ea9fd, type: 3}
+  - {fileID: -4255591007059340136, guid: f3a3739c46df07c4783aa7cacd4ea9fd, type: 3}
+  - {fileID: -799077722016857931, guid: f3a3739c46df07c4783aa7cacd4ea9fd, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - PlatformsSlippery_8
+  - PlatformsSlippery_9
+  - PlatformsSlippery_0
+  - PlatformsSlippery_1
+  - PlatformsSlippery_2
+  - PlatformsSlippery_3
+  - PlatformsSlippery_4
+  - PlatformsSlippery_5
+  - PlatformsSlippery_6
+  - PlatformsSlippery_7
+  - PlatformsSlippery_13
+  - PlatformsSlippery_12
+  - PlatformsSlippery_11
+  - PlatformsSlippery_10
+  - PlatformsSlippery_16
+  - PlatformsSlippery_15
+  - PlatformsSlippery_14
+  m_RenderDataMap: {}
+  m_Tag: SlipperyPlatformAtlas
+  m_IsVariant: 0

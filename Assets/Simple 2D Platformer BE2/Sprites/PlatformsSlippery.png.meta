@@ -50,6 +50,9 @@ TextureImporter:
   - first:
       213: -4255591007059340136
     second: PlatformsSlippery_15
+  - first:
+      213: 5466970857942078623
+    second: PlatformsSlippery_16
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -482,6 +485,27 @@ TextureImporter:
       bones: []
       spriteID: 89491e2b68a11f4c0800000000000000
       internalID: -4255591007059340136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlatformsSlippery_16
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f94dc01b7059edb40800000000000000
+      internalID: 5466970857942078623
       vertices: []
       indices: 
       edges: []

@@ -1,0 +1,90 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: StickyPlatformAtlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 0
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 0
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 2800000, guid: 84c32b706676a8f4e95438ca3e8d2d55, type: 3}
+    totalSpriteSurfaceArea: 4352
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: -1564328271635491792, guid: 84c32b706676a8f4e95438ca3e8d2d55, type: 3}
+  - {fileID: -6768722893379776506, guid: 84c32b706676a8f4e95438ca3e8d2d55, type: 3}
+  - {fileID: 8533878673625362182, guid: 84c32b706676a8f4e95438ca3e8d2d55, type: 3}
+  - {fileID: 1493335097983342456, guid: 84c32b706676a8f4e95438ca3e8d2d55, type: 3}
+  - {fileID: 5176086018011042909, guid: 84c32b706676a8f4e95438ca3e8d2d55, type: 3}
+  - {fileID: 3838569080942424588, guid: 84c32b706676a8f4e95438ca3e8d2d55, type: 3}
+  - {fileID: 5762903527378075987, guid: 84c32b706676a8f4e95438ca3e8d2d55, type: 3}
+  - {fileID: 2952839802491522378, guid: 84c32b706676a8f4e95438ca3e8d2d55, type: 3}
+  - {fileID: 3657401627030349184, guid: 84c32b706676a8f4e95438ca3e8d2d55, type: 3}
+  - {fileID: 2910696570913472234, guid: 84c32b706676a8f4e95438ca3e8d2d55, type: 3}
+  - {fileID: -489776004409295301, guid: 84c32b706676a8f4e95438ca3e8d2d55, type: 3}
+  - {fileID: -8016006604907135586, guid: 84c32b706676a8f4e95438ca3e8d2d55, type: 3}
+  - {fileID: -6243430522568503739, guid: 84c32b706676a8f4e95438ca3e8d2d55, type: 3}
+  - {fileID: 6178569203200642531, guid: 84c32b706676a8f4e95438ca3e8d2d55, type: 3}
+  - {fileID: -8194037584298982744, guid: 84c32b706676a8f4e95438ca3e8d2d55, type: 3}
+  - {fileID: -3369456740783439680, guid: 84c32b706676a8f4e95438ca3e8d2d55, type: 3}
+  - {fileID: 61936687346038269, guid: 84c32b706676a8f4e95438ca3e8d2d55, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - PlatformsSticky_9
+  - PlatformsSticky_8
+  - PlatformsSticky_10
+  - PlatformsSticky_11
+  - PlatformsSticky_12
+  - PlatformsSticky_1
+  - PlatformsSticky_13
+  - PlatformsSticky_0
+  - PlatformsSticky_14
+  - PlatformsSticky_3
+  - PlatformsSticky_15
+  - PlatformsSticky_2
+  - PlatformsSticky_16
+  - PlatformsSticky_5
+  - PlatformsSticky_4
+  - PlatformsSticky_7
+  - PlatformsSticky_6
+  m_RenderDataMap: {}
+  m_Tag: StickyPlatformAtlas
+  m_IsVariant: 0

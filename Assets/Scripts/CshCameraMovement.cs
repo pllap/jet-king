@@ -17,6 +17,6 @@ public class CshCameraMovement : MonoBehaviour
     private void FixedUpdate()
     {
         float distance = mPlayer.position.y - mCamera.transform.position.y;
-        mCamera.transform.position = new Vector2(mCamera.transform.position.x, mPlayer.position.y);
+        mCamera.transform.position = new Vector3(mCamera.transform.position.x, mPlayer.position.y, -10);
     }
 }

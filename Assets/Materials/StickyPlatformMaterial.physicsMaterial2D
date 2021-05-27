@@ -7,5 +7,5 @@ PhysicsMaterial2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: StickyPlatformMaterial
-  friction: 5
+  friction: 64
   bounciness: 0

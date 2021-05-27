@@ -6,13 +6,14 @@ using UnityEngine.Serialization;
 
 public class CshPlayerController : MonoBehaviour
 {
+    public float maxSpeed;
+    public float acceleration;
+    public float maxThrust;
+    public float thrustPower;
+
     private Rigidbody2D _rigidbody2D;
     private SpriteRenderer _spriteRenderer;
     private Animator _animator;
-
-    public float maxSpeed = 8.0f;
-    public float maxThrust = 2.0f;
-    public float thrustPower = 2.0f;
 
     private void Awake()
     {
@@ -60,7 +61,7 @@ public class CshPlayerController : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.Space))
         {
-            _rigidbody2D.AddForce(Vector2.up * thrustPower, ForceMode2D.Force);
+            _rigidbody2D.AddForce(Time.deltaTime * thrustPower * Vector2.up, ForceMode2D.Force);
 
             if (_rigidbody2D.velocity.y > maxThrust)
             {
@@ -73,7 +74,7 @@ public class CshPlayerController : MonoBehaviour
     {
         var direction = Input.GetAxisRaw("Horizontal");
 
-        _rigidbody2D.AddForce(Vector2.right * direction, ForceMode2D.Force);
+        _rigidbody2D.AddForce(Time.deltaTime * direction * acceleration * Vector2.right, ForceMode2D.Force);
 
         if (_rigidbody2D.velocity.x * direction > maxSpeed)
         {

@@ -50,6 +50,9 @@ TextureImporter:
   - first:
       213: -489776004409295301
     second: PlatformsSticky_15
+  - first:
+      213: -6243430522568503739
+    second: PlatformsSticky_16
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -482,6 +485,27 @@ TextureImporter:
       bones: []
       spriteID: b3e7ca5a157f339f0800000000000000
       internalID: -489776004409295301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlatformsSticky_16
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54e0972d401ea59a0800000000000000
+      internalID: -6243430522568503739
       vertices: []
       indices: 
       edges: []

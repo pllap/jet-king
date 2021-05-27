@@ -44,45 +44,47 @@ SpriteAtlas:
     variantMultiplier: 1
     packables:
     - {fileID: 2800000, guid: e85c6e02fda4a004b84664f435ad4d73, type: 3}
-    totalSpriteSurfaceArea: 4096
+    totalSpriteSurfaceArea: 4352
     bindAsDefault: 1
     isAtlasV2: 0
     cachedData: {fileID: 0}
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
-  - {fileID: 6576202649694883678, guid: e85c6e02fda4a004b84664f435ad4d73, type: 3}
-  - {fileID: -2658475963797995646, guid: e85c6e02fda4a004b84664f435ad4d73, type: 3}
-  - {fileID: 9148909279685094865, guid: e85c6e02fda4a004b84664f435ad4d73, type: 3}
-  - {fileID: 5238178756103069120, guid: e85c6e02fda4a004b84664f435ad4d73, type: 3}
-  - {fileID: -5365963968028550086, guid: e85c6e02fda4a004b84664f435ad4d73, type: 3}
-  - {fileID: 8598293912659149021, guid: e85c6e02fda4a004b84664f435ad4d73, type: 3}
-  - {fileID: -8555344763861739660, guid: e85c6e02fda4a004b84664f435ad4d73, type: 3}
-  - {fileID: -2784247815669728694, guid: e85c6e02fda4a004b84664f435ad4d73, type: 3}
-  - {fileID: -7516653739194389164, guid: e85c6e02fda4a004b84664f435ad4d73, type: 3}
-  - {fileID: -2906028173944417041, guid: e85c6e02fda4a004b84664f435ad4d73, type: 3}
-  - {fileID: 4294643669078967044, guid: e85c6e02fda4a004b84664f435ad4d73, type: 3}
-  - {fileID: 8284008178146917663, guid: e85c6e02fda4a004b84664f435ad4d73, type: 3}
-  - {fileID: 8506730005712635708, guid: e85c6e02fda4a004b84664f435ad4d73, type: 3}
-  - {fileID: -1808344714089705743, guid: e85c6e02fda4a004b84664f435ad4d73, type: 3}
-  - {fileID: 9202526412431455181, guid: e85c6e02fda4a004b84664f435ad4d73, type: 3}
-  - {fileID: 1982798753367972342, guid: e85c6e02fda4a004b84664f435ad4d73, type: 3}
+  - {fileID: 7790489806565057393, guid: e85c6e02fda4a004b84664f435ad4d73, type: 3}
+  - {fileID: 5420418460906776080, guid: e85c6e02fda4a004b84664f435ad4d73, type: 3}
+  - {fileID: -1460643933276943363, guid: e85c6e02fda4a004b84664f435ad4d73, type: 3}
+  - {fileID: -274442635206943934, guid: e85c6e02fda4a004b84664f435ad4d73, type: 3}
+  - {fileID: 186778259860431313, guid: e85c6e02fda4a004b84664f435ad4d73, type: 3}
+  - {fileID: 5399061400661604672, guid: e85c6e02fda4a004b84664f435ad4d73, type: 3}
+  - {fileID: -301653405578374708, guid: e85c6e02fda4a004b84664f435ad4d73, type: 3}
+  - {fileID: -4227913453271759177, guid: e85c6e02fda4a004b84664f435ad4d73, type: 3}
+  - {fileID: -6518242031988935372, guid: e85c6e02fda4a004b84664f435ad4d73, type: 3}
+  - {fileID: -6635905541183440361, guid: e85c6e02fda4a004b84664f435ad4d73, type: 3}
+  - {fileID: -178359932455013240, guid: e85c6e02fda4a004b84664f435ad4d73, type: 3}
+  - {fileID: -7925157222857896072, guid: e85c6e02fda4a004b84664f435ad4d73, type: 3}
+  - {fileID: -871907234539676369, guid: e85c6e02fda4a004b84664f435ad4d73, type: 3}
+  - {fileID: 54522180897507154, guid: e85c6e02fda4a004b84664f435ad4d73, type: 3}
+  - {fileID: 7193844817558614349, guid: e85c6e02fda4a004b84664f435ad4d73, type: 3}
+  - {fileID: -1598417253368685799, guid: e85c6e02fda4a004b84664f435ad4d73, type: 3}
+  - {fileID: 1683800829450327948, guid: e85c6e02fda4a004b84664f435ad4d73, type: 3}
   m_PackedSpriteNamesToIndex:
-  - Slope Left
-  - Middle
-  - Bottom Right
-  - Slope Under Left
-  - Top Left
-  - Top Right
-  - Middle Left
-  - Single
-  - Bottom Left
-  - Middle Right
-  - Top
-  - Bottom
-  - Single Left
-  - Slope Right
-  - Slope Under Right
-  - Single Right
+  - Platforms_16
+  - Platforms_15
+  - Platforms_14
+  - Platforms_13
+  - Platforms_12
+  - Platforms_11
+  - Platforms_10
+  - Platforms_4
+  - Platforms_5
+  - Platforms_6
+  - Platforms_7
+  - Platforms_0
+  - Platforms_1
+  - Platforms_2
+  - Platforms_3
+  - Platforms_8
+  - Platforms_9
   m_RenderDataMap: {}
   m_Tag: New Sprite Atlas 1
   m_IsVariant: 0
