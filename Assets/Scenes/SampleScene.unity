@@ -591,10 +591,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2cbc7a1f67f69664ca9a9887b1ebd167, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  horizontalSpeed: 512
-  horizontalAcceleration: 512
-  thrust: 16
-  thrustAcceleration: 550
+  horizontalSpeed: 8
+  horizontalAcceleration: 8
+  thrust: 8
+  thrustAcceleration: 11
 --- !u!95 &233438951
 Animator:
   serializedVersion: 3
@@ -2725,8 +2725,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f56b8685c4d06b41846bf585b4815b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fuelCapacity: 8
-  fuel: 8
+  fuelCapacity: 2
+  fuel: 2
   thrustable: 0
   isThrusting: 0
   fuelImage: {fileID: 854893478}

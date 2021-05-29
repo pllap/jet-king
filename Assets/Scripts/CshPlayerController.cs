@@ -24,9 +24,13 @@ public class CshPlayerController : MonoBehaviour
 
     void Update()
     {
+        UpdateAnimation();
+    }
+
+    private void FixedUpdate()
+    {
         HorizontalMove();
         Thrust();
-        UpdateAnimation();
     }
 
     private void UpdateAnimation()
@@ -64,7 +68,7 @@ public class CshPlayerController : MonoBehaviour
             if (CshGameManager.Instance.thrustable)
             {
                 CshGameManager.Instance.isThrusting = true;
-                _rigidbody2D.AddForce(Time.deltaTime * thrustAcceleration * Vector2.up, ForceMode2D.Force);
+                _rigidbody2D.AddForce(thrustAcceleration * Vector2.up, ForceMode2D.Force);
             }
 
             if (_rigidbody2D.velocity.y > thrust)
@@ -82,7 +86,7 @@ public class CshPlayerController : MonoBehaviour
     {
         var direction = Input.GetAxisRaw("Horizontal");
 
-        _rigidbody2D.AddForce(Time.deltaTime * direction * horizontalAcceleration * Vector2.right, ForceMode2D.Force);
+        _rigidbody2D.AddForce(direction * horizontalAcceleration * Vector2.right, ForceMode2D.Force);
 
         if (_rigidbody2D.velocity.x * direction > horizontalSpeed)
         {

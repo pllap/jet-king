@@ -53,8 +53,7 @@ public class CshGameManager : MonoBehaviour
         thrustable = true;
     }
 
-    // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         // 연료 감소
         if (isThrusting)
