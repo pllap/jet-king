@@ -6,10 +6,10 @@ using UnityEngine.Serialization;
 
 public class CshPlayerController : MonoBehaviour
 {
-    public float maxSpeed;
-    public float acceleration;
-    public float maxThrust;
-    public float thrustPower;
+    public float horizontalSpeed;
+    public float horizontalAcceleration;
+    public float thrust;
+    public float thrustAcceleration;
 
     private Rigidbody2D _rigidbody2D;
     private SpriteRenderer _spriteRenderer;
@@ -54,19 +54,27 @@ public class CshPlayerController : MonoBehaviour
         _animator.SetBool(
             "isFloating",
             Physics2D.Raycast(_rigidbody2D.position, Vector2.down, 0.5f).collider == null
-        );
+            );
     }
 
     void Thrust()
     {
         if (Input.GetKey(KeyCode.Space))
         {
-            _rigidbody2D.AddForce(Time.deltaTime * thrustPower * Vector2.up, ForceMode2D.Force);
-
-            if (_rigidbody2D.velocity.y > maxThrust)
+            if (CshGameManager.Instance.thrustable)
             {
-                _rigidbody2D.velocity = new Vector2(_rigidbody2D.velocity.x, maxThrust);
+                CshGameManager.Instance.isThrusting = true;
+                _rigidbody2D.AddForce(Time.deltaTime * thrustAcceleration * Vector2.up, ForceMode2D.Force);
             }
+
+            if (_rigidbody2D.velocity.y > thrust)
+            {
+                _rigidbody2D.velocity = new Vector2(_rigidbody2D.velocity.x, thrust);
+            }
+        }
+        else
+        {
+            CshGameManager.Instance.isThrusting = false;
         }
     }
 
@@ -74,11 +82,11 @@ public class CshPlayerController : MonoBehaviour
     {
         var direction = Input.GetAxisRaw("Horizontal");
 
-        _rigidbody2D.AddForce(Time.deltaTime * direction * acceleration * Vector2.right, ForceMode2D.Force);
+        _rigidbody2D.AddForce(Time.deltaTime * direction * horizontalAcceleration * Vector2.right, ForceMode2D.Force);
 
-        if (_rigidbody2D.velocity.x * direction > maxSpeed)
+        if (_rigidbody2D.velocity.x * direction > horizontalSpeed)
         {
-            _rigidbody2D.velocity = new Vector2(direction * maxSpeed, _rigidbody2D.velocity.y);
+            _rigidbody2D.velocity = new Vector2(direction * horizontalSpeed, _rigidbody2D.velocity.y);
         }
     }
 }
