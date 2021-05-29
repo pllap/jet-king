@@ -2727,8 +2727,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fuelCapacity: 8
   fuel: 8
-  floatable: 1
-  isFloating: 0
+  thrustable: 0
+  isThrusting: 0
+  fuelImage: {fileID: 854893478}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -2948,7 +2949,7 @@ GameObject:
   - component: {fileID: 854893479}
   - component: {fileID: 854893478}
   m_Layer: 2
-  m_Name: Capacity
+  m_Name: Fuel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

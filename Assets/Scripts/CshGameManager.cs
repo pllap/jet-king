@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CshGameManager : MonoBehaviour
 {
@@ -10,6 +11,8 @@ public class CshGameManager : MonoBehaviour
     public float fuel;
     [HideInInspector] public bool thrustable;
     [HideInInspector] public bool isThrusting;
+
+    public Image fuelImage;
 
     public static CshGameManager Instance
     {
@@ -73,5 +76,7 @@ public class CshGameManager : MonoBehaviour
                 fuel = fuelCapacity;
             }
         }
+
+        fuelImage.fillAmount = fuel / fuelCapacity;
     }
 }
