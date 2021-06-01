@@ -55,6 +55,11 @@ public class CshGameManager : MonoBehaviour
 
     void FixedUpdate()
     {
+        calculateFuel();
+    }
+
+    private void calculateFuel()
+    {
         // 연료 감소
         if (isThrusting)
         {
