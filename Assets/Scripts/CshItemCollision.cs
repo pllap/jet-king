@@ -11,7 +11,7 @@ public class CshItemCollision : MonoBehaviour
         {
             CshGameManager.Instance.fuel = CshGameManager.Instance.fuelCapacity;
             CshGameManager.Instance.fuelImage.fillAmount = CshGameManager.Instance.fuel / CshGameManager.Instance.fuelCapacity;
-            Destroy(this.gameObject);
+            this.gameObject.SetActive(false);
         }
     }
 }
