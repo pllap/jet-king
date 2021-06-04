@@ -17,6 +17,7 @@ public class CshPlayerController : MonoBehaviour
 
     private void Awake()
     {
+        //DontDestroyOnLoad(gameObject);
         this._rigidbody2D = GetComponent<Rigidbody2D>();
         this._spriteRenderer = GetComponent<SpriteRenderer>();
         this._animator = GetComponent<Animator>();
@@ -24,13 +25,19 @@ public class CshPlayerController : MonoBehaviour
 
     void Update()
     {
-        UpdateAnimation();
+        if (!CshGameManager.Instance.isGameEnd)
+        {
+            UpdateAnimation();
+        }
     }
 
     private void FixedUpdate()
     {
-        HorizontalMove();
-        Thrust();
+        if (!CshGameManager.Instance.isGameEnd)
+        {
+            HorizontalMove();
+            Thrust();            
+        }
     }
 
     private void UpdateAnimation()
